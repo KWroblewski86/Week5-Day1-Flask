@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyle's Favorites Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            Kyle's Favorites Page
+          </span>
+        </div>
+    </nav>
+
+{% block content %}
+    <h1>Kyle's Top Five Movies Are:</h1>
+    <br>
+    <ul>
+        <li>Greatest Showman</li>
+        <li>Boondock Saints</li>
+        <li>Inception</li>
+        <li>The Pink Panther</li>
+        <li>The Departed</li>
+    </ul>
+    <span>
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/10/The_Greatest_Showman_poster.png?20220211012122">
+    <img src="https://m.media-amazon.com/images/I/51ZM8CE7W0L._AC_SY350_QL15_.jpg">
+    <img src="https://i.ebayimg.com/images/g/LsQAAOSwJ1dhxl3S/s-l500.jpg">
+    <img src="https://bestsimilar.com/img/movie/thumb/77/20350.jpg">
+    <img src="https://resizing.flixster.com/ZQFb2Ln3STDuhjaIRcUnYxwU82Q=/206x305/v2/https://flxt.tmsimg.com/assets/p162564_p_v8_ag.jpg">
+    </span>
+    
+
+    <a href="/">Home Page</a>    
+    
+    {% endblock %}
+
+
+</body>
+
+</html>
